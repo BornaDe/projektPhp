@@ -1,0 +1,338 @@
+/* Reset osnovnih stilova */
+body, h1, h2, h3, p, ul, li, a, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globalni stilovi */
+body {
+    background-color: #f8f9fa; /* Svijetlo siva */
+    color: #000000; /* Crni tekst */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Linkovi */
+a {
+    text-decoration: none;
+    color: #47ffbc; /* Zelena za linkove */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #35cba4; /* Tamnija nijansa zelene na hover */
+}
+
+/* Kontejner */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Bijela pozadina */
+    border: 1px solid #e0e0e0; /* Svijetlo siva obruba */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Zaglavlja */
+h1, h2, h3 {
+    color: #000000; /* Crni tekst */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Paragrafi */
+p {
+    margin-bottom: 15px;
+}
+
+/* Navigacija */
+nav {
+    background-color: #47ffbc; /* Zelena navigacija */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Bijeli tekst */
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Blago zaobljeni rubovi */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #35cba4; /* Tamnija zelena na hover */
+    color: #ffffff;
+}
+
+/* Specifični stil za login gumb */
+.login-button {
+    background-color: #ffffff; /* Bijela pozadina */
+    color: #47ffbc; /* Zelena boja za tekst */
+    border: 2px solid #47ffbc; /* Zelena obruba */
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #47ffbc; /* Zelena pozadina na hover */
+    color: #ffffff; /* Bijeli tekst na hover */
+}
+
+
+/* Admin Login gumb */
+.admin-login {
+    background-color: #ffffff; /* Bijela pozadina */
+    color: #47ffbc; /* Zelena boja za tekst */
+    border: 2px solid #47ffbc; /* Zelena obruba */
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.admin-login:hover {
+    background-color: #47ffbc; /* Zelena pozadina na hover */
+    color: #ffffff; /* Bijeli tekst na hover */
+}
+
+
+/* Gumbi */
+button {
+    background-color: #47ffbc; /* Zelena boja */
+    color: #ffffff; /* Bijeli tekst */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #35cba4; /* Tamnija zelena */
+    transform: translateY(-2px);
+}
+
+/* Formulari */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    border: 1px solid #e0e0e0; /* Svijetlo siva obruba */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    color: #000000; /* Crni tekst */
+    background-color: #ffffff; /* Bijela pozadina */
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #47ffbc; /* Zelena na fokus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(71, 255, 188, 0.5);
+}
+
+/* Tablice */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff; /* Bijela pozadina */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0; /* Svijetlo siva obruba */
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #47ffbc; /* Zelena zaglavlja */
+    color: #ffffff; /* Bijeli tekst */
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Svijetlo siva za izmjenične redove */
+}
+
+/* Karte (kartice) */
+.job-card {
+    background-color: #ffffff; /* Bijela pozadina */
+    border: 1px solid #e0e0e0; /* Svijetlo siva obruba */
+    border-left: 5px solid #47ffbc; /* Zelena lijeva linija */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mapa */
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #47ffbc; /* Zelena obruba */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Stil za zeleni gumb */
+.button {
+    display: inline-block;
+    background-color: #47ffbc; /* Zelena boja */
+    color: #ffffff; /* Bijeli tekst */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px; /* Okrugli oblik */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Suptilna sjena */
+}
+
+.button:hover {
+    background-color: #35cba4; /* Tamnija zelena na hover */
+    transform: translateY(-3px); /* Blago podizanje na hover */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #47ffbc; /* Zelena pozadina */
+    color: #ffffff; /* Bijeli tekst */
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0; /* Svijetlo siva linija */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Sakrij modal dok nije aktiviran */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Poluprozirna crna pozadina */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modal-content {
+    background-color: #ffffff; /* Bijela pozadina za sadržaj */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    max-width:  90%; /* Maksimalna širina modala */
+    width: 90%; /* 90% širine ekrana */
+    position: relative;
+    overflow-y: auto; /* Dodaj skrolanje ako sadržaj premaši visinu */
+    max-height: 80%; /* Ograniči visinu modala */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #000000; /* Crni tekst */
+    font-size: 1.8em; /* Veći naslov */
+}
+
+.modal-content p {
+    margin-bottom: 15px;
+    color: #000000; /* Crni tekst */
+    line-height: 1.5;
+    font-size: 1.1em; /* Veći tekst za bolju čitljivost */
+}
+
+.modal .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5em;
+    color: #47ffbc; /* Zelena za dugme zatvaranja */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modal .close:hover {
+    color: #35cba4; /* Tamnija zelena na hover */
+}
+
+.add-admin-button {
+    background-color: #47ffbc;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-admin-button:hover {
+    background-color: #35cba4;
+    transform: translateY(-2px);
+}
